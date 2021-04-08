@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.aboutme-container {
+    
+    border-top: 5px solid #fff;
+    background: linear-gradient(90deg, #8e1b16, #fff);
+    padding: 0 30px;
+    color: #fff;
+}
+
+.aboutme-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+}
+
+.profile {
+    height: 300px;
+    width: auto;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    padding: 5px;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.cv-container {
+    padding: 0 30px;
+}
+
+.cv-wrapper {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-wrapper h1 {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.cv-wrapper p {
+    line-height: 2.0;
+}
+
+@media  screen and (max-width: 468px) {
+    .aboutme-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px;
+    }
+
+    .aboutme-container {
+        background: linear-gradient(180deg, #8e1b16, #8e1b16, #fff);
+        height: 550px;
+        width: auto;
+        color: black;
+    }
+    
+    .profile {
+        height: 300px;
+        width: auto;
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+    .about-right {
+        margin-top: -15px;
+        color: black;
+    }
+
+    
+}
